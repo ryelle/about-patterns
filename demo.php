@@ -41,7 +41,8 @@ $lipsum = new \joshtronic\LoremIpsum();
 
 	<div class="about__section is-feature has-accent-background-color">
 		<h1>About Page Design System</h1>
-		<p>This page will demo all possible About section layouts using the design/CSS system in place. There are notes throughout the page, and you can <a href="#">view the HTML source here.</a> The placeholder text here is lighter for demonstration only.</p>
+		<p>This page will demo all possible About section layouts using the design/CSS system in place. There are notes throughout the page, and you can <a href="https://github.com/ryelle/about-patterns/blob/main/demo.php">view the HTML source here.</a> The placeholder text here is lighter for demonstration only.</p>
+		<p>The images below are labelled with the default sizes, but they can appear larger or smaller depending on the screen size.</p>
 	</div>
 
 	<hr />
@@ -77,7 +78,7 @@ $lipsum = new \joshtronic\LoremIpsum();
 	<div class="about__section has-2-columns has-subtle-background-color">
 		<header class="is-section-header">
 			<h2>Two-column layouts</h2>
-			<p>There are 3 variations to the 2-column layout. This section uses the <code>has-subtle-background-color</code> style. A plain <code>hr</code> is above, giving space between image & section.</p>
+			<p>There are 3 variations to the 2-column layout. This section uses the <code>has-subtle-background-color</code> style. A plain <code>hr</code> is above, giving space between image & section. This section appears to be one group due to the shared background color, but it's actually 3 <code>about__section</code>s with the same background & no spacer <code>hr</code>.</p>
 		</header>
 		<div class="column">
 			<h3>Even layout</h3>
@@ -126,7 +127,10 @@ $lipsum = new \joshtronic\LoremIpsum();
 	<hr />
 
 	<div class="about__section has-4-columns">
-		<h2 class="is-section-header">Four-column layout</h2>
+		<header class="is-section-header aligncenter">
+			<h2>Four-column layout</h2>
+			<p>This header uses <code>is-section-header</code> so that it can span across all four columns, and <code>aligncenter</code> to center the text.</p>
+		</header>
 		<div class="column">
 			<p>This layout is good for short text, about 1 sentence or so. Small, simple images work too. Videos would be hard to see at this size.</p>
 			<p class="has-accent-color">An accent color can be used on text too, with <code>has-accent-color</code>.</p>
