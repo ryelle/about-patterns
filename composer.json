@@ -1,0 +1,13 @@
+{
+    "name": "ryelle/about-patterns",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Kelly Dwan",
+            "email": "ryelle@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "joshtronic/php-loremipsum": "dev-master"
+    }
+}
