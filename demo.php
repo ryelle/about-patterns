@@ -43,19 +43,32 @@ $lipsum = new \joshtronic\LoremIpsum();
 		<h1>About Page Design System</h1>
 		<p>This page will demo all possible About section layouts using the design/CSS system in place. There are notes throughout the page, and you can <a href="https://github.com/ryelle/about-patterns/blob/main/demo.php">view the HTML source here.</a> The placeholder text here is lighter for demonstration only.</p>
 		<p>The images below are labelled with the default sizes, but they can appear larger or smaller depending on the screen size.</p>
+		<p>This is a featured section, using <code>is-feature</code>.</p>
 	</div>
 
 	<hr />
 
-	<div class="about__section">
-		<h2>Colors</h2>
-		<ul>
-			<li><span class="ap-color-chip" style="background-color:var(--text);"></span><code>--text</code> Main text color</li>
-			<li><span class="ap-color-chip" style="background-color:var(--background);"></span><code>--background</code> Page background</li>
-			<li><span class="ap-color-chip" style="background-color:var(--subtle-background);"></span><code>--subtle-background</code> Used for section backgrounds if given the class <code>has-subtle-background-color</code></li>
-			<li><span class="ap-color-chip" style="background-color:var(--accent-1);"></span><code>--accent-1</code> Used for section backgrounds if given the class <code>has-accent-background-color</code></li>
-			<li><span class="ap-color-chip" style="background-color:var(--accent-2);"></span><code>--accent-2</code>, <span class="ap-color-chip" style="background-color:var(--accent-3);"></span><code>--accent-3</code> These are used in different places throughout the page, in navigation, links, etc</li>
-		</ul>
+	<div class="about__section has-subtle-background-color">
+		<div class="column">
+			<h2>Structure</h2>
+			<p>The about page is comprised of sections, <code>about__section</code>. Each section can have various helper classes (described below). Generally one "row" of content is one section, and it can have 1-4 columns inside. The sections are set up in separate rows like this for better IE11 support. Each column in a section has padding, which can be removed with the class <code>is-edge-to-edge</code>.</p>
+			<p>To create space between sections, an <code>hr</code> is used. Above is a normal <code>hr</code> (32px), below is an <code>hr.is-small</code> (8px), for a smaller space.</p>
+		</div>
+	</div>
+
+	<hr class="is-small" />
+
+	<div class="about__section has-subtle-background-color">
+		<div class="column">
+			<h2>Colors</h2>
+			<ul>
+				<li><span class="ap-color-chip" style="background-color:var(--text);"></span><code>--text</code> Main text color</li>
+				<li><span class="ap-color-chip" style="background-color:var(--background);"></span><code>--background</code> Page background</li>
+				<li><span class="ap-color-chip" style="background-color:var(--subtle-background);"></span><code>--subtle-background</code> Used for section backgrounds if given the class <code>has-subtle-background-color</code> (like this one)</li>
+				<li><span class="ap-color-chip" style="background-color:var(--accent-1);"></span><code>--accent-1</code> Used for section backgrounds if given the class <code>has-accent-background-color</code></li>
+				<li><span class="ap-color-chip" style="background-color:var(--accent-2);"></span><code>--accent-2</code>, <span class="ap-color-chip" style="background-color:var(--accent-3);"></span><code>--accent-3</code> These are used in different places throughout the page, in navigation, links, etc</li>
+			</ul>
+		</div>
 	</div>
 
 	<hr class="is-large" />
