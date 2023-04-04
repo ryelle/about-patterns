@@ -194,4 +194,24 @@ $lipsum = new \joshtronic\LoremIpsum();
 		</div>
 	</div>
 
+	<hr class="is-large" />
+
+	<div class="about__section has-2-columns has-gutters">
+		<div class="column has-border">
+			<p>These sections have borders, using <code>has-border</code> on the <code>column</code>.</p>
+			<p><span class="is-lipsum"><?php echo $lipsum->sentences( 1 ); ?></span></p>
+		</div>
+		<div class="column has-border">
+			<p><span class="is-lipsum"><?php echo $lipsum->sentences( 2 ); ?></span></p>
+		</div>
+	</div>
+
+	<hr />
+
+	<div class="about__section has-border has-subtle-background-color">
+		<div class="column">
+			<p>This section has borders, using <code>has-border</code> on the <code>about__section</code>.</p>
+			<p><span class="is-lipsum"><?php echo $lipsum->sentences( 3 ); ?></span></p>
+		</div>
+	</div>
 </div>
