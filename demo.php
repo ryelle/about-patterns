@@ -21,23 +21,21 @@ $lipsum = new \joshtronic\LoremIpsum();
 <div class="wrap about__container">
 
 	<div class="about__header">
+		<div class="about__header-title">
+			<h1>About Patterns</h1>
+		</div>
+
 		<div class="about__header-text">
 			About page pattern demos. This is the<br />
 			featured header, with some demo navigation.
 		</div>
-
-		<div class="about__header-title">
-			<p>About Patterns</p>
-		</div>
-
-		<nav class="about__header-navigation nav-tab-wrapper wp-clearfix" aria-label="Secondary menu">
-			<a href="#" class="nav-tab nav-tab-active" aria-current="page">Active Item</a>
-			<a href="#" class="nav-tab">Second Tab</a>
-			<a href="#" class="nav-tab">Third Tab</a>
-		</nav>
 	</div>
 
-	<hr />
+	<nav class="about__header-navigation nav-tab-wrapper wp-clearfix" aria-label="Secondary menu">
+		<a href="#" class="nav-tab nav-tab-active" aria-current="page">Active Item</a>
+		<a href="#" class="nav-tab">Second Tab</a>
+		<a href="#" class="nav-tab">Third Tab</a>
+	</nav>
 
 	<div class="about__section is-feature has-accent-background-color">
 		<h1>About Page Design System</h1>
