@@ -120,6 +120,16 @@ $lipsum = new \joshtronic\LoremIpsum();
 		</div>
 	</div>
 
+	<div class="about__section has-2-columns has-overlap-style has-subtle-background-color">
+		<div class="column is-top-layer">
+			<h3>Two-column layout: overlap</h3>
+			<p><span class="is-lipsum"><?php echo $lipsum->sentences( 1 ); ?></span></p>
+		</div>
+		<div class="column about__image has-accent-background-color">
+			<img src="data:image/svg+xml,%3Csvg width='275' height='250' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='transparent' /%3E%3Ctext text-anchor='middle' font-family='sans-serif' font-size='24' y='50%25' x='50%25'%3Eimage width: 275px%3C/text%3E%3C/svg%3E" alt="" />
+		</div>
+	</div>
+
 	<hr />
 
 	<div class="about__section has-3-columns">
