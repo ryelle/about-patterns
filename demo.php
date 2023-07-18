@@ -87,49 +87,51 @@ $lipsum = new \joshtronic\LoremIpsum();
 
 	<hr />
 
+	<div>
 	<div class="about__section has-2-columns has-subtle-background-color">
 		<header class="is-section-header">
 			<h2>Two-column layouts</h2>
-			<p>There are 3 variations to the 2-column layout. This section uses the <code>has-subtle-background-color</code> style. A plain <code>hr</code> is above, giving space between image & section. This section appears to be one group due to the shared background color, but it's actually 3 <code>about__section</code>s with the same background & no spacer <code>hr</code>.</p>
+			<p>There are 4 variations to the 2-column layout. This section uses the <code>has-subtle-background-color</code> style. A plain <code>hr</code> is above, giving space between image & section. This section appears to be one group due to the shared background color, but it's actually 34 <code>about__section</code>s with the same background & no spacer <code>hr</code>.</p>
 		</header>
 		<div class="column">
-			<h3>Even layout</h3>
-			<p><span class="is-lipsum"><?php echo $lipsum->sentences( 3 ); ?></span></p>
+			<h3>Two-column layout: default</h3>
+			<p>This is <code>has-2-columns</code>. <span class="is-lipsum"><?php echo $lipsum->sentences( 2 ); ?></span></p>
 		</div>
 		<div class="column about__image">
-			<img src="data:image/svg+xml,%3Csvg width='436' height='250' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='%23ddd' /%3E%3Ctext text-anchor='middle' font-family='sans-serif' font-size='24' y='50%25' x='50%25'%3Eimage width: 436px%3C/text%3E%3C/svg%3E" alt="" />
+			<img src="data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='%23ddd' /%3E%3Ctext text-anchor='middle' font-family='sans-serif' font-size='24' y='50%25' x='50%25'%3Eimage width: 436px%3C/text%3E%3C/svg%3E" alt="" />
 		</div>
 	</div>
 
 	<div class="about__section has-2-columns is-wider-left has-subtle-background-color">
 		<div class="column">
 			<h3>Two-column layout: wide left</h3>
-			<p><span class="is-lipsum"><?php echo $lipsum->sentences( 3 ); ?></span></p>
+			<p>This is <code>has-2-columns is-wider-left</code>. <span class="is-lipsum"><?php echo $lipsum->sentences( 2 ); ?></span></p>
 		</div>
 		<div class="column about__image">
-			<img src="data:image/svg+xml,%3Csvg width='269' height='250' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='%23ddd' /%3E%3Ctext text-anchor='middle' font-family='sans-serif' font-size='24' y='50%25' x='50%25'%3Eimage width: 269px%3C/text%3E%3C/svg%3E" alt="" />
+			<img src="data:image/svg+xml,%3Csvg width='300' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='%23ddd' /%3E%3Ctext text-anchor='middle' font-family='sans-serif' font-size='24' y='50%25' x='50%25'%3Eimage width: 336px%3C/text%3E%3C/svg%3E" alt="" />
 		</div>
 	</div>
 
 	<div class="about__section has-2-columns is-wider-right has-subtle-background-color">
 		<div class="column">
 			<h3>Two-column layout: wide right</h3>
-			<p><span class="is-lipsum"><?php echo $lipsum->sentences( 1 ); ?></span></p>
+			<p>This is <code>has-2-columns is-wider-right</code>. <span class="is-lipsum"><?php echo $lipsum->sentences( 1 ); ?></span></p>
 		</div>
 		<div class="column about__image">
-			<img src="data:image/svg+xml,%3Csvg width='602' height='250' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='%23ddd' /%3E%3Ctext text-anchor='middle' font-family='sans-serif' font-size='24' y='50%25' x='50%25'%3Eimage width: 602px%3C/text%3E%3C/svg%3E" alt="" />
+			<img src="data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='%23ddd' /%3E%3Ctext text-anchor='middle' font-family='sans-serif' font-size='24' y='50%25' x='50%25'%3Eimage width: 536px%3C/text%3E%3C/svg%3E" alt="" />
 		</div>
 	</div>
 
 	<div class="about__section has-2-columns has-overlap-style has-subtle-background-color">
-		<div class="column is-top-layer">
+		<div class="column is-top-layer is-vertically-aligned-center">
 			<h3>Two-column layout: overlap</h3>
-			<p><span class="is-lipsum"><?php echo $lipsum->sentences( 1 ); ?></span></p>
+			<p>This is <code>has-2-columns has-overlap-style</code>. The content column needs <code>is-top-layer</code> so that it isn't covered by the image. <span class="is-lipsum"><?php echo $lipsum->sentences( 1 ); ?></span></p>
 		</div>
-		<div class="column about__image has-accent-background-color">
-			<img src="data:image/svg+xml,%3Csvg width='275' height='250' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='transparent' /%3E%3Ctext text-anchor='middle' font-family='sans-serif' font-size='24' y='50%25' x='50%25'%3Eimage width: 275px%3C/text%3E%3C/svg%3E" alt="" />
+		<div class="column about__image">
+			<img src="data:image/svg+xml,%3Csvg width='300' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='%23ddd' /%3E%3Ctext text-anchor='end' font-family='sans-serif' font-size='24' y='50%25' x='100%25'%3Eimage width: 275px%3C/text%3E%3C/svg%3E" alt="" />
 		</div>
 	</div>
+</div>
 
 	<hr />
 
